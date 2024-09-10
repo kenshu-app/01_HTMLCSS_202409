@@ -62,11 +62,6 @@ td {
   border: 1px solid #ccc;
 }
 
-th {
-  text-align: left;
-  vertical-align: top;
-}
-
 input[type="text"],
 input[type="email"],
 input[type="submit"],
@@ -83,6 +78,10 @@ input[type="checkbox"] {
   margin: 0 10px 0 30px;
 }
 
+th {
+  text-align: left;
+  vertical-align: top;
+}
 
 /*-------------------------
   グローバル
@@ -109,8 +108,41 @@ input[type="checkbox"] {
 .logo {
   width: 200px;
   height: 65px;
+  margin-bottom: 15px;
+}
+
+.logo a {
+  display: block;
+  width: 200px;
+  height: 65px;
   text-indent: -9999px;
   background: url("../images/logo.png") 0 0 / cover no-repeat;
+}
+
+.logo a:hover {
+  opacity: 0.7;
+}
+
+.gl-nav ul {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.gl-nav li {
+  display: table-cell;
+  text-align: center;
+  border-right: 2px solid #000;
+}
+
+.gl-nav li a {
+  display: block;
+  color: #ccc;
+  text-shadow: 0 0 5px #000;
+}
+
+.gl-nav li a:hover {
+  color: #a86;
 }
 
 .gl-footer {
@@ -179,7 +211,6 @@ input[type="checkbox"] {
   margin: 50px 0 20px;
   border-bottom: 2px dotted #422;
 }
-
 /*-------------------------
   メニュー
 -------------------------*/
