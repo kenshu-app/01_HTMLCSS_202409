@@ -32,6 +32,10 @@ a:visited {
   color: #333;
 }
 
+:hover {
+  transition: 0.4s ease-in;
+}
+
 a:hover,
 a:active {
   color: #933;
@@ -153,6 +157,35 @@ th {
   color: #ccc;
   letter-spacing: 0.3em;
   text-align: center;
+}
+
+.jBounceIn {
+  transition: 0.6s cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+.jBounceIn:hover,
+.jbounceIn:focus,
+.jbounceIn:active {
+  transform: scale(1.04);
+}
+
+.jBounceUp:hover {
+  animation: jBounceUp-frames 1s;
+}
+@keyframes jBounceUp-frames {
+  0%,
+  20%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+  }
+
+  80% {
+    transform: translateY(-10px);
+  }
 }
 
 /*-------------------------
