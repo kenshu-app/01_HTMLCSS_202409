@@ -16,6 +16,7 @@ body {
   font-size: 1.6rem;
   line-height: 2;
   font-feature-settings: "palt";
+  text-size-adjust: 100%;
 }
 
 a {
@@ -66,6 +67,13 @@ td {
   border: 1px solid #ccc;
 }
 
+@media screen and (max-width: 768px) {
+  th,
+  td {
+    padding: 10px;
+  }
+}
+
 input[type="text"],
 input[type="email"],
 input[type="submit"],
@@ -75,6 +83,16 @@ textarea {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="submit"],
+  select,
+  textarea {
+    width: 100%;
+  }
 }
 
 input[type="radio"],
@@ -96,6 +114,12 @@ th {
   margin: auto;
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    width: 94%;
+  }
+}
+
 .gl-header {
   height: 140px;
   padding-top: 15px;
@@ -106,7 +130,15 @@ th {
       rgb(27 18 18 / 80%) 100%
     ),
     url("../images/wood.jpg") 0 0 / contain repeat-x;
-  background-blend-mode: hard-light;
+    background-blend-mode: hard-light;
+  }
+  
+  @media screen and (max-width: 768px) {
+  .gl-header {
+    height: auto;
+    margin-bottom: -10px;
+    background-size: cover;
+  }
 }
 
 .logo {
@@ -125,6 +157,12 @@ th {
 
 .logo a:hover {
   opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    margin: auto;
+  }
 }
 
 .gl-nav ul {
@@ -149,6 +187,18 @@ th {
   color: #a86;
 }
 
+@media screen and (max-width: 768px) {
+  .gl-nav ul {
+    display: block;
+  }
+  .gl-nav li {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border-right: none;
+  }
+}
+
 .gl-footer {
   height: 120px;
   padding-top: 50px;
@@ -157,6 +207,13 @@ th {
   color: #ccc;
   letter-spacing: 0.3em;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .gl-footer {
+    line-height: 1.5;
+    height: 40vw;
+  }
 }
 
 .jBounceIn {
@@ -199,6 +256,13 @@ th {
   box-shadow: inset 0 2px 5px #555;
 }
 
+@media screen and (max-width: 768px) {
+  .top-welcome {
+    height: 1280px;
+    background-image: url("../images/main_sp.jpg");
+  }
+}
+
 .top-hero {
   position: relative;
 }
@@ -221,6 +285,22 @@ th {
   font-size: 4.2rem;
 }
 
+@media screen and (max-width: 768px) {
+  .top-catch {
+    left: 0;
+    padding: 80vw 0;
+    height: 1280px;
+    line-height: 2;
+    text-align: justify;
+    background-position: center top;
+    background-size: contain;
+  }
+
+  .top-catch br {
+    display: none;
+  }
+}
+
 .top-parent {
   display: flex;
   justify-content: space-between;
@@ -228,6 +308,17 @@ th {
 
 .top-main {
   width: 660px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .top-parent {
+    display: block;
+  }
+
+  .top-main {
+    width: 100%;
+  }
 }
 
 .top-order {
@@ -276,6 +367,15 @@ th {
   border-bottom: 1px dotted #ccc;
 }
 
+@media screen and (max-width: 768px) {
+  .top-time,
+  .top-rank {
+    height: 680px;
+    padding: 400px 20px 20px;
+    background-position: center top;
+  }
+}
+
 .top-news dl {
   display: flex;
   flex-wrap: wrap;
@@ -301,6 +401,18 @@ th {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .top-news {
+    margin-bottom: 30px;
+  }
+  .top-news dt {
+    width: 30%;
+  }
+  .top-news dd {
+    width: 70%;
+  }
+}
+
 .top-side {
   width: 300px;
 }
@@ -311,6 +423,12 @@ th {
 
 .sns {
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .top-side {
+    margin: auto;
+  }
 }
 
 /*-------------------------
@@ -390,6 +508,23 @@ th {
 .menu li {
   margin-bottom: 15px;
   border-bottom: 1px dotted #ccc;
+}
+
+@media screen and (max-width: 768px) {
+  .menus>ul,
+  .menus>ul li a {
+    display: block;
+  }
+
+  .menu {
+    margin-bottom: 50vw;
+  }
+
+  .menu::after {
+    width: 90%;
+    height: 45vw;
+    top: 95%;
+  }
 }
 
 /*-------------------------
