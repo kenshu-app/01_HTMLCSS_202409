@@ -175,6 +175,19 @@ th {
   width: 660px;
 }
 
+.top-order {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-time {
+  order: 2;
+}
+
+.top-rank {
+  order: 1;
+}
+
 .top-time,
 .top-rank {
   border: 1px solid #ccc;
@@ -206,6 +219,21 @@ th {
 .top-time li,
 .top-rank li {
   border-bottom: 1px dotted #ccc;
+}
+
+
+.top-news dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.top-news dt {
+  width: 18%;
+}
+
+.top-news dd {
+  width: 82%;
+  border-bottom: 2px dotted #ccc;
 }
 
 .top-news dd:first-of-type::after {
@@ -246,6 +274,19 @@ th {
 /*-------------------------
   メニュー
 -------------------------*/
+
+.menus > ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.menus > ul li a {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-bottom-color: transparent;
+  border-radius: 3px 3px 0 0;
+}
 
 .menu {
   padding: 20px 30px;

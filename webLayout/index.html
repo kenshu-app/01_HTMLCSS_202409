@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap-reboot.min.css">
+    <style>
+        .wrapper {
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 685px 300px;
+            grid-template-rows: 80px 200px 400px 80px;
+            gap: 15px;
+        }
+
+        .gl-header,
+        .top-hero,
+        .top-main,
+        .top-side,
+        .gl-footer {
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+
+        .gl-header,
+        .top-hero,
+        .gl-footer {
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+    <!-- .wrapper>header.gl-header>h1{Web Layout}^section.top-hero>h2{Copy Message}^main.top-main>h2{Contents Title}^aside.top-side+footer.gl-footer -->
+    <div class="wrapper">
+        <header class="gl-header">
+            <h1>Web Layout</h1>
+        </header>
+        <section class="top-hero">
+            <h2>Copy Message</h2>
+        </section>
+        <main class="top-main">
+            <h2>Contents Title</h2>
+        </main>
+        <aside class="top-side"></aside>
+        <footer class="gl-footer"></footer>
+    </div>
+</body>
+</html>
