@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button list</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap-reboot.min.css">
+    <style>
+        /*-------------------------
+            初期値
+        -------------------------*/
+        ul {
+            width: 500px;
+            margin: 100px auto;
+            list-style-type: none;
+            display: flex;
+        }
+
+        a {
+            display: block;
+            padding: 10px 24px;
+            box-shadow: 0 0 3px #ccc;
+            font-weight: bold;
+        }
+
+        a:hover {
+            transition: .3s ease;
+            opacity: 0.7;
+        }
+
+        /*-------------------------
+            ボタン01
+        -------------------------*/
+        .btn01 li ~ li {
+            margin-left: 10px;
+        }
+
+        .btn01 a {
+            border-radius: 3px;
+            color: #fff;
+        }
+
+        .btn01 li:nth-of-type(1) a {
+            background-color: red;
+        }
+        .btn01 li:nth-of-type(2) a {
+            background-color: blue;
+        }
+        .btn01 li:nth-of-type(3) a {
+            background-color: green;
+        }
+
+        /*-------------------------
+        ボタン02
+        -------------------------*/
+        .btn02 a {
+            background: linear-gradient(#eee, #ccc);
+            color: #666;
+        }
+
+        .btn02 li:first-of-type a {
+            border-radius: 3px 0 0 3px;
+        }
+
+        .btn02 li:last-of-type a {
+            border-radius: 0 3px 3px 0;
+        }
+
+        .btn02 li ~ li a {
+            border-left: 1px solid rgb(255 255 255 / .5);
+        }
+    </style>
+</head>
+<body>
+    <!-- ul.btn$$*2>li*3>a{ボタン$$} -->
+    <ul class="btn01">
+        <li><a href="">ボタン01</a></li>
+        <li><a href="">ボタン02</a></li>
+        <li><a href="">ボタン03</a></li>
+    </ul>
+    <ul class="btn02">
+        <li><a href="">ボタン01</a></li>
+        <li><a href="">ボタン02</a></li>
+        <li><a href="">ボタン03</a></li>
+    </ul>
+</body>
+</html>
